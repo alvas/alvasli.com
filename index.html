@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Index</title>
+    </head>
+    <style>
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.tagcloud {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+  }
+  .tagcloud--item:hover {
+    color: #36454F;
+  }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <body>
+        <h1><a href="https://alvasli.blogspot.com/">=o=</a></h1>
+        <span class="content"></span>
+    <script>
+const myTags = [
+    'Ahoj',
+    'Bongu',
+    'Bonjour',
+    'Buna ziua', 
+    'habari',
+    'Hallo', 
+    'Hei',
+    'Hej',
+    'Hello', 
+    'Helló',
+    'Hola',
+    'Kamusta', 
+    'kia ora',
+    'Lumela', 
+    'Merhaba',
+    'Mholweni', 'העלא',
+    'mhoro', 'هيلو',
+    'Nnọọ',
+    'nyob zoo',
+    'ola',
+    'Olá',
+    'Pẹlẹ o',
+    'salam',
+    'saluton', 
+    'Salve', 
+    'Sawubona',
+    'talofa',
+    'xin chào', 
+    'zdravo',
+    'γεια σας',
+    'Здраво',
+    'Здравствуйте', 'ہیلو', 'ياخشىمۇسىز',
+    'Привет', 
+    'Сайн уу',
+    'Салом',
+    'Сәлам',
+    'Сәлеметсіз бе',
+    'Բարեւ Ձեզ', 
+    'नमस्ते',
+    'નમસ્તે',
+    'வணக்கம்', 
+    'హలో',
+    'ආයුබෝවන්', 
+    'สวัสดี', 
+    'გამარჯობა',
+    'សួស្តី',
+    'こんにちは', 'שלום',
+    '你好', 
+    '안녕하십니까', 'أهلا', 
+];
+
+var tagCloud = TagCloud('.content', myTags,{
+
+  // radius in px
+  radius: 250,
+
+  // animation speed
+  // slow, normal, fast
+  maxSpeed: 'fast',
+  initSpeed: 'fast',
+
+  // 0 = top
+  // 90 = left
+  // 135 = right-bottom
+  direction: 135,
+  
+  // interact with cursor move on mouse out
+  keep: true
+  
+});
+
+//To change the color of text randomly
+var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+var random_color = colors[Math.floor(Math.random() * colors.length)];
+document.querySelector('.content').style.color = random_color;
+    </script>
+    </body>
+</html>
