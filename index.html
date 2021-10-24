@@ -28,14 +28,15 @@ a:visited {
     margin: auto;
     width: 50%;
   }
-  .tagcloud--item:hover {
+
+.tagcloud--item:hover {
     color: #36454F;
-  }
+}
     </style>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
     <body>
         <h1><a href="https://alvasli.blogspot.com/">=o=</a></h1>
-        <span class="content"></span>
+        <span class="tagcloud"></span>
     <script>
 const myTags = [
     'Ahoj',
@@ -89,7 +90,7 @@ const myTags = [
     '안녕하십니까', 'أهلا', 
 ];
 
-var tagCloud = TagCloud('.content', myTags,{
+var tagCloud = TagCloud('.tagcloud', myTags,{
 
   // radius in px
   radius: 250,
@@ -110,9 +111,9 @@ var tagCloud = TagCloud('.content', myTags,{
 });
 
 //To change the color of text randomly
-var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', '#FFBA01', '#01A6F0', '#FF0000'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
-document.querySelector('.content').style.color = random_color;
+document.querySelector('.tagcloud').style.color = random_color;
     </script>
     </body>
 </html>
